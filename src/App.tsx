@@ -18,17 +18,25 @@ function App() {
 
   return (
     <div>
+      <h1>COMPONENT PREVIEW</h1>
+      <h2>Button: </h2>
       <Button
         label={isToggled ? "Off" : "On"}
         toggle={isToggled}
         onClick={handleButtonClick}
       />
-      <Hero BGimage='https://preview.redd.it/mihawks-upscaling-gets-more-terrifying-as-each-chapter-goes-v0-t3dw8lil335f1.png?auto=webp&s=49a9eb6c42a47bae8a73a3ae0cfa3be9354e63ac'>
-      HERO IMAGE
-      </Hero>
+
+      <h2>Label:</h2>
       <Label>
         LABEL
       </Label>
+
+      <h2>Hero Image:</h2>
+      <Hero BGimage='https://preview.redd.it/mihawks-upscaling-gets-more-terrifying-as-each-chapter-goes-v0-t3dw8lil335f1.png?auto=webp&s=49a9eb6c42a47bae8a73a3ae0cfa3be9354e63ac'>
+      HERO IMAGE
+      </Hero>
+
+      
     </div>
   );
 }
