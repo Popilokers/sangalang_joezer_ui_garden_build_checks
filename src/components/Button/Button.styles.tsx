@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledButton = styled.button<{ toggle?: boolean; }>`
-  /* Adapt the colors based on primary prop */
   background-color: ${({ toggle }) => (toggle ? '#ccc' : '#007bff')};
   
   &:hover {
