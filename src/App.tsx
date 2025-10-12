@@ -10,7 +10,7 @@ import Text from './components/Text';
 import Img from './components/Img';
 import Card from './components/Card';
 import { Table, Header, Row, Cell, Footer } from './components/Table';
-
+import Dropdown from './components/Dropdown';
 function App() {
   // state variable to track whether button is disabled (or clicked)
 
@@ -21,7 +21,7 @@ function App() {
 // };
       const [isButtonDisabled, setIsButtonDisabled] = useState(false);
       const [isCardDisabled, setIsCardDisabled] = useState(false);
-
+      
       const handleButtonClick = () => {
       console.log(isButtonDisabled);
       setIsButtonDisabled(true); // toggles disabled state
@@ -30,6 +30,11 @@ function App() {
       console.log(isCardDisabled);
       setIsCardDisabled(true); // toggles disabled state
       }
+
+
+      const options = ['mihawk upscale', 'buggy upscale', 'moria upscale'];
+      const [selected, setSelected] = useState(options[0]);
+
   return (
     <div>
       <h1>COMPONENT PREVIEW</h1>
@@ -41,18 +46,7 @@ function App() {
 
       <h2>Text:</h2>
       <Text>text</Text>
-
-
-      <h2>Img:</h2>
-      <Img/>
-      
-      <h2>Hero Image:</h2>
-      <Hero/>
-      
-      <h2>Card:</h2>
-      <Card onClick={handleCardClick} disabled = {isCardDisabled}></Card>
-
-      <h2>Table:</h2>
+<h2>Table:</h2>
       <Table disabled = {true}>
         <Header>
           <Row>
@@ -77,6 +71,26 @@ function App() {
           </Row>
         </Footer>
       </Table>
+      <h2>Dropdown:</h2>
+
+      
+            <Dropdown 
+        label="Choose an option"
+        // options={options}
+        // value={selected}
+        onChange={setSelected}
+      />
+
+      <h2>Img:</h2>
+      <Img/>
+      
+      <h2>Hero Image:</h2>
+      <Hero/>
+      
+      <h2>Card:</h2>
+      <Card onClick={handleCardClick} disabled = {isCardDisabled}></Card>
+
+      
     </div>
   );
 }
