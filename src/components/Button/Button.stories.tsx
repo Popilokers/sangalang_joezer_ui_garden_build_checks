@@ -10,8 +10,9 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Button_Story: Story = {
   args: {
-    label: "Button"
+    labelOn: "Button",
+    labelOff: "Button"
   }
 };

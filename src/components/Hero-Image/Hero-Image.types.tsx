@@ -1,4 +1,5 @@
 export interface HeroProps{
-    BGimage : string;
-    children?: React.ReactNode;
+    bgimage? : string;
+    title?: string;
+    subtext?: string;
 }

@@ -13,7 +13,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Hero_Story: Story = {
   args: {
-    BGimage: "https://preview.redd.it/mihawks-upscaling-gets-more-terrifying-as-each-chapter-goes-v0-t3dw8lil335f1.png?auto=webp&s=49a9eb6c42a47bae8a73a3ae0cfa3be9354e63ac",
-    children: "HERO"
+    bgimage: "https://preview.redd.it/mihawks-upscaling-gets-more-terrifying-as-each-chapter-goes-v0-t3dw8lil335f1.png?auto=webp&s=49a9eb6c42a47bae8a73a3ae0cfa3be9354e63ac"
   }
 };

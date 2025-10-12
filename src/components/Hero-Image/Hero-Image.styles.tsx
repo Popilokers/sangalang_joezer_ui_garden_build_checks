@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const StyledHero = styled.div<{ BGimage: string }>`
+export const StyledHero = styled.div<{ bgimage: string }>`
   position: relative;
-  background-image: url(${props => props.BGimage});
+  background-image: url(${props => props.bgimage});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

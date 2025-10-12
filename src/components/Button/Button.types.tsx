@@ -1,5 +1,6 @@
 export interface ButtonProps {
-  label: string;
+  labelOn?: string;
+  labelOff?: string;
   toggle?: boolean;
   onClick?: () => void;
 }
