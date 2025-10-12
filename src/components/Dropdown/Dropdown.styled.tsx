@@ -20,7 +20,7 @@ export const Select = styled.select<{ disabled?: boolean }>`
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
 
   &:focus {
-    border-color: #007bff;
-    outline: none;
+    background-color: red;
+    outline: 2px solid blue;
   }
 `;

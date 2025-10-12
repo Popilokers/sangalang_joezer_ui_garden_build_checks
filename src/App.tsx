@@ -11,6 +11,8 @@ import Img from './components/Img';
 import Card from './components/Card';
 import { Table, Header, Row, Cell, Footer } from './components/Table';
 import Dropdown from './components/Dropdown';
+import Radio from  './components/Radio-Button';
+
 function App() {
   // state variable to track whether button is disabled (or clicked)
 
@@ -47,7 +49,7 @@ function App() {
       <h2>Text:</h2>
       <Text>text</Text>
 <h2>Table:</h2>
-      <Table disabled = {true}>
+      <Table disabled = {false}>
         <Header>
           <Row>
             <Cell>Header Cell</Cell>
@@ -80,6 +82,14 @@ function App() {
         // value={selected}
         onChange={setSelected}
       />
+
+    <Radio
+      name="example"
+      label="Pick an option"
+      options={options}
+      selectedValue={selected}
+      onChange={setSelected}
+    />
 
       <h2>Img:</h2>
       <Img/>
