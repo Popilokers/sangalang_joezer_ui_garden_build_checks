@@ -1,0 +1,25 @@
+# Use a Node.js base image
+FROM node:20-alpine
+
+# Set working directory inside container
+WORKDIR /app
+
+# Copy package.json and lockfile first (for caching)
+COPY package.json package-lock.json* yarn.lock* ./
+
+COPY public ./public
+
+# Install dependencies
+RUN npm install
+
+# Copy rest of the project files
+COPY . .
+
+# Build Storybook static files (optional, if you want to serve static files)
+# RUN npm run build-storybook
+
+# Expose Storybook port
+EXPOSE 6006
+
+# Start Storybook server
+CMD ["npm", "run", "storybook"]
