@@ -14,6 +14,16 @@ export const Default: Story = {
   args: {
     color: "red",
     size: "30px",
-    children: "ASFASF"
+    children: "ASFASF",
+    disabled: false
+  }
+};
+
+export const Disabled: Story = {
+  args: {
+    color: "red",
+    size: "30px",
+    children: "ASFASF",
+    disabled: true
   }
 };

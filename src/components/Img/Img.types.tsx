@@ -3,4 +3,5 @@ export interface ImgProps{
     src? : string;
     height? : string;
     width? : string;
+    disabled? : boolean;
 } 

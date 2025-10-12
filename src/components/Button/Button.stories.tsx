@@ -10,9 +10,18 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Button_Story: Story = {
+export const Default: Story = {
   args: {
-    labelOn: "Button",
-    labelOff: "Button"
+    labelOn: "On",
+    labelOff: "Off",
+    toggle: false
+  }
+};
+
+export const Disabled: Story = {
+  args: {
+    labelOn: "On",
+    labelOff: "Off",
+    toggle: true
   }
 };

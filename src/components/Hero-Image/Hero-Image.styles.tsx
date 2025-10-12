@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-export const StyledHero = styled.div<{ bgimage: string }>`
+export const StyledHero = styled.div<{ bgimage: string; disabled? : boolean }>`
   position: relative;
-  background-image: url(${props => props.bgimage});
+  background-image: url(${({ disabled }) => (disabled ? '' : 'https://preview.redd.it/mihawks-upscaling-gets-more-terrifying-as-each-chapter-goes-v0-t3dw8lil335f1.png?auto=webp&s=49a9eb6c42a47bae8a73a3ae0cfa3be9354e63ac')});
+  cursor:${({disabled}) => (disabled ? "not-allowed" : "pointer")};
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
