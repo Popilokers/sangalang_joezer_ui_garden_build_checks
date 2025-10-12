@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 // component imports
@@ -10,6 +9,7 @@ import Label from './components/Label';
 import Text from './components/Text';
 import Img from './components/Img';
 import Card from './components/Card';
+import { Table, Header, Row, Cell, Footer } from './components/Table';
 
 function App() {
   // state variable to track whether button is disabled (or clicked)
@@ -19,16 +19,22 @@ function App() {
 //   console.log(isToggled);
 //   setIsToggled(prev => !prev); // toggles disabled state
 // };
-      const [isToggled, setIsToggled] = useState(false);
+      const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+      const [isCardDisabled, setIsCardDisabled] = useState(false);
+
       const handleButtonClick = () => {
-      console.log(isToggled);
-      setIsToggled(true); // toggles disabled state
+      console.log(isButtonDisabled);
+      setIsButtonDisabled(true); // toggles disabled state
+      }
+      const handleCardClick = () => {
+      console.log(isCardDisabled);
+      setIsCardDisabled(true); // toggles disabled state
       }
   return (
     <div>
       <h1>COMPONENT PREVIEW</h1>
       <h2>Button: </h2>
-      <Button onClick={handleButtonClick} />
+      <Button onClick={handleButtonClick} disabled = {isButtonDisabled}/>
 
       <h2>Label:</h2>
       <Label>LABEL</Label>
@@ -42,9 +48,35 @@ function App() {
       
       <h2>Hero Image:</h2>
       <Hero/>
-
-      <Card onClick={handleButtonClick}></Card>
       
+      <h2>Card:</h2>
+      <Card onClick={handleCardClick} disabled = {isCardDisabled}></Card>
+
+      <h2>Table:</h2>
+      <Table disabled = {true}>
+        <Header>
+          <Row>
+            <Cell>Header Cell</Cell>
+            <Cell>Header Cell2</Cell>
+            <Cell>Header Cell3</Cell>
+            <Cell>Header Cell4</Cell>
+          </Row>
+        </Header>
+        <Row>
+          <Cell>Data Cell</Cell>
+          <Cell>Data Cell2</Cell>
+          <Cell>Data Cell3</Cell>
+          <Cell>Data Cell4</Cell>
+        </Row>
+        <Footer>
+          <Row>
+            <Cell>Footer Cell</Cell>
+            <Cell>Footer Cell2</Cell>
+            <Cell>Footer Cell3</Cell>
+            <Cell disabled = {true}>Footer Cell4</Cell>
+          </Row>
+        </Footer>
+      </Table>
     </div>
   );
 }

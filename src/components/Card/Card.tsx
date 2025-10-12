@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { CardProps } from "./Card.types";
 import { StyledCard } from './Card.styles';
 import Label from '../Label';

@@ -14,7 +14,7 @@ export const Default: Story = {
   args: {
     labelOn: "On",
     labelOff: "Off",
-    toggle: false
+    disabled: false
   }
 };
 
@@ -22,6 +22,6 @@ export const Disabled: Story = {
   args: {
     labelOn: "On",
     labelOff: "Off",
-    toggle: true
+    disabled: true
   }
 };

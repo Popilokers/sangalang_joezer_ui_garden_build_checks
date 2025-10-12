@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const StyledButton = styled.button<{ toggle?: boolean; bgcolor?:string;}>`
-  background-color: ${({ toggle, bgcolor  }) => (toggle ? '#ccc' : bgcolor)};
-  color:${({ toggle }) => (toggle ? 'black' : '#ccc')};
-  cursor:${({toggle}) => (toggle ? "not-allowed" : "pointer")};
+export const StyledButton = styled.button<{ disabled?: boolean; bgcolor?:string;}>`
+  background-color: ${({ disabled, bgcolor  }) => (disabled ? '#ccc' : bgcolor)};
+  color:${({ disabled }) => (disabled ? 'black' : '#ccc')};
+  cursor:${({disabled}) => (disabled ? "not-allowed" : "pointer")};
 
   &:hover {
-    background-color: ${({ toggle }) => toggle ? '#ccc' : '#0056b3'};
+    background-color: ${({ disabled }) => disabled ? '#ccc' : '#0056b3'};
   }
   border: none;
   padding: 10px 20px;

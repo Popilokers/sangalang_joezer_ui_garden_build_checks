@@ -1,5 +1,5 @@
 import React from "react";
-import { render} from '@testing-library/react';
+import { render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'jest-styled-components';
 import Text from './Text';
@@ -7,26 +7,22 @@ import Text from './Text';
 describe('Text', () => {
     it('renders the Text (default)', () => {
         render(<Text>Text Default</Text>)
-    });
-});
+        const textElement = screen.getByText('Text Default');
 
-describe('Text', () => {
-    it('renders the Text (color + default size)', () => {
-        render(<Text color = "red" >Text color</Text>)
-    });
-});
-
-
-describe('Text', () => {
-    it('renders the Text (size + default color)', () => {
-        render(<Text size = "5px" >Text size</Text>)
+    expect(textElement).toBeInTheDocument();
+    expect(textElement).toHaveStyle('color: blue');
+    expect(textElement).toHaveStyle('font-size: 12px');
     });
 });
 
 
-
 describe('Text', () => {
-    it('renders the Text (size and color)', () => {
-        render(<Text size = "5px" color = "red">Text color + size</Text>)
+    it('renders the Text (disabled)', () => {
+        render(<Text disabled={true}>disabled</Text>)
+        
+    const textElement = screen.getByText('disabled');
+    expect(textElement).toBeInTheDocument();
+    expect(textElement).toHaveStyle('color: grey');
+    expect(textElement).toHaveStyle('font-size: 12px');
     });
 });
