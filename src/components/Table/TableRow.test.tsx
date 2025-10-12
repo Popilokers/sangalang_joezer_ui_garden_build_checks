@@ -5,11 +5,7 @@ import 'jest-styled-components';
 import Row from './TableRow';
 import styled from 'styled-components';
 
-export const StyledRow = styled.tr<{color?:string; disabled?:boolean}>`
-   opacity: ${({ disabled }) => (disabled ? '0.2' : '1')};
-    
-   cursor:  ${({ disabled }) => (disabled ? 'not-allowed' :'pointer')};
-`;
+
 
 describe('Table Header', () => {
     it('renders the Table Header (default)', () => {

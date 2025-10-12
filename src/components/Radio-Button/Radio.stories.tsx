@@ -18,3 +18,12 @@ export const Default: Story = {
     onChange: (value: string) => {}, // dummy function
   }
 };
+
+export const Disabled: Story = {
+  args: {
+    name: "radio",
+    options: ["mihawk upscale", "buggy upscale", "moria upscale"],
+    selectedValue: "mihawk upscale",
+    disabled: true
+  }
+};

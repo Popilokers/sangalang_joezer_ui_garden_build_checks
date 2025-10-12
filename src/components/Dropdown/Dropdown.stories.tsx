@@ -16,3 +16,10 @@ export const Default: Story = {
     onChange: (value: string) => {}, // dummy function
   }
 };
+
+export const Disabled: Story = {
+  args: {
+    options: ["mihawk upscale", "buggy upscale", "moria upscale"],
+    disabled: true
+  }
+};
