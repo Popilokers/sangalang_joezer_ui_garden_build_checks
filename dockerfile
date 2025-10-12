@@ -2,7 +2,7 @@
 FROM node:18-alpine AS builder
 
 # Set working directory inside container
-WORKDIR /lastName_firstName_ui_garden
+WORKDIR /sangalang_joezer_ui_garden
 
 # Copy package.json and package-lock.json (if exists)
 COPY package*.json ./
@@ -20,7 +20,7 @@ RUN npm run build
 FROM nginx:stable-alpine
 
 # Copy the built files from builder stage
-COPY --from=builder /lastName_firstName_ui_garden/build /usr/share/nginx/html
+COPY --from=builder /sangalang_joezer_ui_garden/build /usr/share/nginx/html
 
 # Remove default nginx.conf
 RUN rm /etc/nginx/conf.d/default.conf

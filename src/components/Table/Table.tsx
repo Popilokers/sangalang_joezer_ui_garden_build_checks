@@ -8,8 +8,14 @@ const StyledTable = styled.table<{  disabled?: boolean }>`
    opacity: ${({ disabled }) => (disabled ? 0.2 : 1)};
 `;
 
-const StyledWrapper = styled.div<{disabled? : boolean}>`
-cursor:${({disabled}) => (disabled ? "not-allowed" : "pointer")};
+const StyledWrapper = styled.div<{ disabled?: boolean }>`
+  ${({ disabled }) =>
+    disabled &&
+    `
+    table, td, th, tr, thead, tbody, tfoot, div, span, button, a {
+      cursor: not-allowed !important;
+    }
+  `}
 `;
 
 const Table: React.FC<TableProps> = ({ children, color = "white", disabled = false  }) => {

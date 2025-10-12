@@ -24,6 +24,7 @@ export const Disabled: Story = {
     name: "radio",
     options: ["mihawk upscale", "buggy upscale", "moria upscale"],
     selectedValue: "mihawk upscale",
+    onChange: (value: string) => {}, // dummy function
     disabled: true
   }
 };

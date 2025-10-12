@@ -12,6 +12,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args:{
+    disabled:false,
     options: ["mihawk upscale", "buggy upscale", "moria upscale"],
     onChange: (value: string) => {}, // dummy function
   }
@@ -20,6 +21,7 @@ export const Default: Story = {
 export const Disabled: Story = {
   args: {
     options: ["mihawk upscale", "buggy upscale", "moria upscale"],
-    disabled: true
+    disabled: true,
+    onChange: (value: string) => {}, // dummy function
   }
 };
