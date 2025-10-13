@@ -2,44 +2,44 @@
 
 A reusable ReactTS component library that utilizes stories from storybook for testing the UI functionality
 
-# Overview
+## Overview
 
 This repository covers the component library which consists of html form tags as components and their stories.
 
-# How to run the program
+## How to run the program
 
-## Cloning the repo
+#### Cloning the repo
 
 git clone https://github.com/Popilokers/React-Component-Library-Assignment12_JSangalang.git
 
-# Installing Dependencies
+#### Installing Dependencies
 npm install
 
-# Building the Images
+### Building the Images
 
-# Building library image
+#### Building library image
 docker build -f dockerfile -t sangalang_joezer_coding_assignment12 .
 
-# Building library storybook
+#### Building library storybook
 docker build -f dockerfile.storybook -t  sangalang_joezer_storybook_image .
 
-# Running the containers
+### Running the containers
 
-# Running library container
+#### Running library container
 docker run -d -p 8083:8083 --name sangalang_joezer_coding_assignment12 
 sangalang_joezer_coding_assignment12 
 
     in browser, go to http://localhost:8083/
 
-# Running storybook container
+#### Running storybook container
 docker run -p 8084:6006 sangalang_joezer_storybook_image
 
     gives a localhost link (http://localhost:8084/)
 
 
-# Dockerfiles 
+## Dockerfiles 
 
-# ReactTs Component Library Docker
+### ReactTs Component Library Docker
 
 node-18 - very reliable and like a base version of node
 alpine - lightweight so the image would take up less storage
