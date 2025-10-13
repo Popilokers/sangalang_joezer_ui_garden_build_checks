@@ -18,7 +18,7 @@ npm install
 ### Building the Images
 
 #### Building library image
-docker build -f dockerfile -t sangalang_joezer_coding_assignment12 .
+docker build -f dockerfile --name sangalang_joezer_coding_assignment12 -t sangalang_joezer_coding_assignment12 .
 
 #### Building library storybook
 docker build -f dockerfile.storybook -t  sangalang_joezer_storybook_image .
