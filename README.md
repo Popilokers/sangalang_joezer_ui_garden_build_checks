@@ -34,7 +34,7 @@ sangalang_joezer_coding_assignment12
 #### Running storybook container
 docker run -p 8084:6006 sangalang_joezer_storybook_image
 
-    gives a localhost link (http://localhost:8084/)
+    in browser, go to http://localhost:8084/
 
 
 ## Dockerfiles 
@@ -54,7 +54,7 @@ daemon -  off because container must run in the foreground and not the backgroun
        -  on = background
 
 
-# ReactTs Component Library Docker
+### ReactTs Component Library Docker
 
 node20 - storybook requires node20
 
