@@ -8,7 +8,7 @@ This repository covers the component library which consists of html form tags as
 
 # How to run the program
 
-# Cloning the repo
+## Cloning the repo
 
 git clone https://github.com/Popilokers/React-Component-Library-Assignment12_JSangalang.git
 
