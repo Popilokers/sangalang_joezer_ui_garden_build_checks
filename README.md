@@ -32,15 +32,34 @@ sangalang_joezer_coding_assignment12
     in browser, go to http://localhost:8083/
 
 # Running storybook container
-docker run sangalang_joezer_storybook_image
+docker run -p 8084:6006 sangalang_joezer_storybook_image
 
-    gives a localhost link
+    gives a localhost link (http://localhost:8084/)
 
 
-# Dockerfile
+# Dockerfiles 
 
-node-20 - storybook needs atleast node.js 20
+# ReactTs Component Library Docker
+
+node-18 - very reliable and like a base version of node
 alpine - lightweight so the image would take up less storage
+
+Using nginx because npm run build creates static files => need server to see output (serving the output)
+
+nginx - used because instructions say "DockerFile will host a production build" - npm run build
+      - npm start will start a development server (not what was asked)
+      - works with NODE_ENV=production to start a lightweight and fast production build (mimics/readies app for deployment)
 
 daemon -  off because container must run in the foreground and not the background
        -  on = background
+
+
+# ReactTs Component Library Docker
+
+node20 - storybook requires node20
+
+public - (local) storybook dir is public
+       - ./public is container
+
+npm run storybook - storybook is for testing so I decided to go with the dev server
+
