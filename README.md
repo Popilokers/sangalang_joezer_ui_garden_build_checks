@@ -26,8 +26,7 @@ docker build -f dockerfile.storybook -t  sangalang_joezer_storybook_image .
 ### Running the containers
 
 #### Running library container
-docker run -p 8083:8083 --name sangalang_joezer_coding_assignment12 
-sangalang_joezer_coding_assignment12 
+docker run -p 8083:8083 --name sangalang_joezer_coding_assignment12 sangalang_joezer_coding_assignment12 
 
     in browser, go to http://localhost:8083/
 
