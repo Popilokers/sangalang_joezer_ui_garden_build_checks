@@ -18,7 +18,7 @@ npm install
 ### Building the Images
 
 #### Building library image
-docker build -f dockerfile --name sangalang_joezer_coding_assignment12 -t sangalang_joezer_coding_assignment12 .
+docker build -f dockerfile -t sangalang_joezer_coding_assignment12 .
 
 #### Building library storybook
 docker build -f dockerfile.storybook -t  sangalang_joezer_storybook_image .
@@ -26,13 +26,13 @@ docker build -f dockerfile.storybook -t  sangalang_joezer_storybook_image .
 ### Running the containers
 
 #### Running library container
-docker run -d -p 8083:8083 --name sangalang_joezer_coding_assignment12 
+docker run -p 8083:8083 --name sangalang_joezer_coding_assignment12 
 sangalang_joezer_coding_assignment12 
 
     in browser, go to http://localhost:8083/
 
 #### Running storybook container
-docker run -p 8084:6006 sangalang_joezer_storybook_image
+docker run -p 8084:6006 --name sangalang_joezer_storybook sangalang_joezer_storybook_image
 
     in browser, go to http://localhost:8084/
 
