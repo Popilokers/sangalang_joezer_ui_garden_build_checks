@@ -35,6 +35,16 @@ docker run -p 8084:6006 --name sangalang_joezer_storybook sangalang_joezer_story
 
     in browser, go to http://localhost:8084/
 
+## Stoping containers
+docker stop sangalang_joezer_coding_assignment12
+
+docker stop sangalang_joezer_storybook
+
+## Starting containers
+docker start sangalang_joezer_coding_assignment12
+
+docker start sangalang_joezer_storybook
+
 
 ## Dockerfiles 
 
