@@ -1,4 +1,4 @@
-export interface FooterProps{
-    disabled?:boolean;
-    children?:React.ReactNode;
-};
+export interface FooterProps {
+  disabled?: boolean;
+  children?: React.ReactNode;
+}

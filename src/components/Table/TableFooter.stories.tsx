@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
 
-import Footer from './TableFooter';
-import Table from './Table';
+import Footer from "./TableFooter";
+import Table from "./Table";
 
 const meta = {
   component: Footer,
@@ -11,30 +11,25 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-
 export const Default: Story = {
-  args:{
+  args: {
     disabled: false,
-    children:(
+    children: (
       <Table>
-        <Footer>
-          footer stories
-        </Footer>
+        <Footer>footer stories</Footer>
       </Table>
-    )
-  }
+    ),
+  },
 };
 
 export const Disabled: Story = {
   args: {
     disabled: true,
 
-        children:(
+    children: (
       <Table>
-        <Footer>
-          footer stories
-        </Footer>
+        <Footer>footer stories</Footer>
       </Table>
-    )
-  }
+    ),
+  },
 };

@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
 
-import Radio from './Radio';
+import Radio from "./Radio";
 
 const meta = {
   component: Radio,
@@ -11,12 +11,12 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args:{
-    name: 'radio',
+  args: {
+    name: "radio",
     options: ["mihawk upscale", "buggy upscale", "moria upscale"],
-     selectedValue: "mihawk upscale",
+    selectedValue: "mihawk upscale",
     onChange: (value: string) => {}, // dummy function
-  }
+  },
 };
 
 export const Disabled: Story = {
@@ -25,6 +25,6 @@ export const Disabled: Story = {
     options: ["mihawk upscale", "buggy upscale", "moria upscale"],
     selectedValue: "mihawk upscale",
     onChange: (value: string) => {}, // dummy function
-    disabled: true
-  }
+    disabled: true,
+  },
 };

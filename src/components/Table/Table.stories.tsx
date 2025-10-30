@@ -1,11 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
 
-import Table from './Table';
-import Row from './TableRow';
-import Header from './TableHeader';
-import Footer from './TableFooter';
-import Cell from './TableCell';
-
+import Table from "./Table";
+import Row from "./TableRow";
+import Header from "./TableHeader";
+import Footer from "./TableFooter";
+import Cell from "./TableCell";
 
 const meta = {
   component: Table,
@@ -20,7 +19,7 @@ export const Default: Story = {
     disabled: false,
     children: (
       <>
-      <Header>
+        <Header>
           <Row>
             <Cell>Header Cell</Cell>
             <Cell>Header Cell2</Cell>
@@ -39,20 +38,20 @@ export const Default: Story = {
             <Cell>Footer Cell</Cell>
             <Cell>Footer Cell2</Cell>
             <Cell>Footer Cell3</Cell>
-            <Cell disabled = {true}>Footer Cell4</Cell>
+            <Cell disabled={true}>Footer Cell4</Cell>
           </Row>
         </Footer>
       </>
     ),
-  }
+  },
 };
 
 export const Disabled: Story = {
   args: {
     disabled: true,
-        children: (
+    children: (
       <>
-      <Header>
+        <Header>
           <Row>
             <Cell>Header Cell</Cell>
             <Cell>Header Cell2</Cell>
@@ -71,11 +70,10 @@ export const Disabled: Story = {
             <Cell>Footer Cell</Cell>
             <Cell>Footer Cell2</Cell>
             <Cell>Footer Cell3</Cell>
-            <Cell disabled = {true}>Footer Cell4</Cell>
+            <Cell disabled={true}>Footer Cell4</Cell>
           </Row>
         </Footer>
       </>
     ),
-
-  }
+  },
 };

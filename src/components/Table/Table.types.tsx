@@ -1,5 +1,5 @@
-export interface TableProps{
-    color?:string; 
-    disabled?:boolean;
-    children?:React.ReactNode;
-};
+export interface TableProps {
+  color?: string;
+  disabled?: boolean;
+  children?: React.ReactNode;
+}

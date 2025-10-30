@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
 
-import Text from './Text';
+import Text from "./Text";
 
 const meta = {
   component: Text,
@@ -15,8 +15,8 @@ export const Default: Story = {
     size: "100px",
     color: "red",
     children: "red",
-    disabled: false
-  }
+    disabled: false,
+  },
 };
 
 export const Disabled: Story = {
@@ -24,6 +24,6 @@ export const Disabled: Story = {
     size: "100px",
     color: "red",
     children: "red",
-    disabled: true
-  }
+    disabled: true,
+  },
 };

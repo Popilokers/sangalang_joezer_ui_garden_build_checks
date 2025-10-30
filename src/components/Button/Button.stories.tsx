@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
 
-import Button from './Button';
+import Button from "./Button";
 
 const meta = {
   component: Button,
@@ -14,14 +14,14 @@ export const Default: Story = {
   args: {
     labelOn: "On",
     labelOff: "Off",
-    disabled: false
-  }
+    disabled: false,
+  },
 };
 
 export const Disabled: Story = {
   args: {
     labelOn: "On",
     labelOff: "Off",
-    disabled: true
-  }
+    disabled: true,
+  },
 };

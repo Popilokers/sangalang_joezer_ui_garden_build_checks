@@ -1,6 +1,6 @@
-export interface TextProps{
-size? : string;
-color? : string;
-disabled? : boolean;
-children?: React.ReactNode;
-};
+export interface TextProps {
+  size?: string;
+  color?: string;
+  disabled?: boolean;
+  children?: React.ReactNode;
+}

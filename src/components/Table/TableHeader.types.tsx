@@ -1,4 +1,4 @@
-export interface HeaderProps{ 
-    disabled?:boolean;
-    children?:React.ReactNode;
-};
+export interface HeaderProps {
+  disabled?: boolean;
+  children?: React.ReactNode;
+}

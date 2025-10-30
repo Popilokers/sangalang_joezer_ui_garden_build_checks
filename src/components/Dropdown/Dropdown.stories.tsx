@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
 
-import Dropdown from './Dropdown';
+import Dropdown from "./Dropdown";
 
 const meta = {
   component: Dropdown,
@@ -11,11 +11,11 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args:{
-    disabled:false,
+  args: {
+    disabled: false,
     options: ["mihawk upscale", "buggy upscale", "moria upscale"],
     onChange: (value: string) => {}, // dummy function
-  }
+  },
 };
 
 export const Disabled: Story = {
@@ -23,5 +23,5 @@ export const Disabled: Story = {
     options: ["mihawk upscale", "buggy upscale", "moria upscale"],
     disabled: true,
     onChange: (value: string) => {}, // dummy function
-  }
+  },
 };

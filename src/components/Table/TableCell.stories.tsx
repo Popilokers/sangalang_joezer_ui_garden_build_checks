@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
 
-import TableCell from './TableCell';
+import TableCell from "./TableCell";
 
 const meta = {
   component: TableCell,
@@ -10,14 +10,15 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {  
+export const Default: Story = {
   args: {
     disabled: false,
     color: "red",
     bgcolor: "blue",
     isHeader: false,
-    children: "child"
-  }};
+    children: "child",
+  },
+};
 
 export const Disabled: Story = {
   args: {
@@ -25,6 +26,6 @@ export const Disabled: Story = {
     color: "red",
     bgcolor: "blue",
     isHeader: false,
-    children: "child"
-  }
+    children: "child",
+  },
 };
