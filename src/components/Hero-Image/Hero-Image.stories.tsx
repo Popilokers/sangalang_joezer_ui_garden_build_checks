@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-webpack5";
 
 import HeroImage from "./Hero-Image";
-import { Children } from "react";
 
 const meta = {
   component: HeroImage,

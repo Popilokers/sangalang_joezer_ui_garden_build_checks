@@ -22,7 +22,7 @@ describe("Table Footer", () => {
   });
 });
 
-describe("Table Footer", () => {
+describe("Table Footer Disabled", () => {
   it("renders the Table Footer (disabled)", () => {
     render(
       <table>

@@ -23,11 +23,14 @@
     }
   },
   "scripts": {
+    "lint:eslint": "eslint 'src/**/*.{ts,tsx,js,jsx}'",
+    "lint-fix": "eslint --fix 'src/**/*.{ts,tsx,js,jsx}'",
+    "lint:prettier": "prettier --check .",
     "format": "prettier --write .",
-    "lint": "prettier --check .",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:ci": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006 --no-open",
     "build-storybook": "storybook build",
@@ -53,8 +56,6 @@
     ]
   },
   "devDependencies": {
-    "lint": "eslint 'src/**/*.{ts,tsx,js,jsx}'",
-    "lint:fix": "eslint --fix 'src/**/*.{ts,tsx,js,jsx}'",
     "@babel/core": "^7.28.4",
     "@babel/preset-env": "^7.28.3",
     "@babel/preset-react": "^7.27.1",

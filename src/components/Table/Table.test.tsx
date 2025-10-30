@@ -22,7 +22,7 @@ describe("Table", () => {
   });
 });
 
-describe("Table", () => {
+describe("Table disbaled", () => {
   it("renders the Table (disabled)", () => {
     render(
       <Table disabled={true}>

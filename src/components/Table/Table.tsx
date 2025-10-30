@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React from "react";
 import { TableProps } from "./Table.types";
 import styled from "styled-components";
 

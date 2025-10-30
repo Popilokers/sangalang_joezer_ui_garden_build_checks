@@ -3,7 +3,6 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import "jest-styled-components";
 import Row from "./TableRow";
-import styled from "styled-components";
 
 describe("Table Header", () => {
   it("renders the Table Header (default)", () => {
@@ -24,7 +23,7 @@ describe("Table Header", () => {
   });
 });
 
-describe("Table Header", () => {
+describe("Table Header Disabled", () => {
   it("renders the Table Header (disabled)", () => {
     render(
       <table>

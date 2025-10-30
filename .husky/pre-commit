@@ -1,1 +1,3 @@
-npm test
+npx prettier --write .
+npx eslint .
+npm run test:ci

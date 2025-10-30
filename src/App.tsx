@@ -8,9 +8,6 @@ import Hero from "./components/Hero-Image";
 import Label from "./components/Label";
 import Text from "./components/Text";
 
-
-
-
 import Img from "./components/Img";
 import Card from "./components/Card";
 import { Table, Header, Row, Cell, Footer } from "./components/Table";

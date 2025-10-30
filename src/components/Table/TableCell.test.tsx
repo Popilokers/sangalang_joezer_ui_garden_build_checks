@@ -2,7 +2,6 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import "jest-styled-components";
-import Cell from "./TableCell";
 
 import styled from "styled-components";
 
@@ -21,7 +20,7 @@ export const StyledCell = styled.td<{
   }
 `;
 
-describe("Table Cell", () => {
+describe("Table Cell Default", () => {
   it("renders the Table Cell (default)", () => {
     render(
       <table>
@@ -44,7 +43,7 @@ describe("Table Cell", () => {
   });
 });
 
-describe("Table Cell", () => {
+describe("Table Cell Disabled", () => {
   it("renders the Table Cell (disabled)", () => {
     render(
       <table>

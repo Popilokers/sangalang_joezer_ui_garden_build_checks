@@ -24,7 +24,7 @@ describe("Table Header", () => {
   });
 });
 
-describe("Table Header", () => {
+describe("Table Header Disabled", () => {
   it("renders the Table Header (disabled)", () => {
     render(
       <table>
