@@ -46,7 +46,7 @@ docker run -p 8019:6006 --name sangalang_joezer_coding_assignment13_storybook sa
 
     in browser, go to http://localhost:8019/
 
-## Stoping containers
+## Stopping containers
 
 docker stop sangalang_joezer_coding_assignment13
 
