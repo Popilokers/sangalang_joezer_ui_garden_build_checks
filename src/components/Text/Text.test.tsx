@@ -15,7 +15,7 @@ describe("Text", () => {
   });
 });
 
-describe("Text disabled", () => {
+describe("Text disabled a", () => {
   it("renders the Text (disabled)", () => {
     render(<Text disabled={true}>disabled</Text>);
 
